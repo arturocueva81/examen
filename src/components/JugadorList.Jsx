@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import JugadorCard from "./JugadorCard";
 import "./JugadorList.css";
+import ErrorPage from "./ErrorPage";
 
 const URL_API = "https://jugadores.up.railway.app/players";
 
@@ -36,11 +37,9 @@ function JugadorList({ onCargados }) {
     }
 
     if (error) {
-        return (
-            <main className="jugador-list estado-contenedor">
-                <div className="error-box">Error: {error}</div>
-            </main>
-        );
+        
+        return <ErrorPage mensaje={error} />;
+        
     }
 
     if (jugadores.length === 0) {

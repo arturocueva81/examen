@@ -6,11 +6,11 @@ function Navbar({ totalJugadores }) {
             <div className="navbar-inner">
                 <div className="navbar-logo">
                     <span className="navbar-icono">⚽</span>
-                    <span>Jugadores de Futbol</span>
+                    <span>Album Panini - FIFA  Soccer PLayers</span>
                 </div>
                 <span className="navbar-contador">
                     {totalJugadores > 0
-                        ? `${totalJugadores} jugadores cargados`
+                        ? `${totalJugadores} jugadores listos para la gran final`
                         : "Cargando..."}
                 </span>
             </div>

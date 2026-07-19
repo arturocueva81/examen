@@ -4,7 +4,7 @@ function Header() {
     return (
         <header className="header">
             <span className="header-icono">🏆</span>
-            <h1>Album Panini - FIFA  Soccer PLayers</h1>
+            <h1>Jugadores final FIFA - 2026</h1>
             
         </header>
     );
